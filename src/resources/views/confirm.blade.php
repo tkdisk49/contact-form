@@ -40,7 +40,8 @@
           </table>
         </div>
         <div class="form__button">
-          <button class="form__button-submit" type="submit">送信</button>
+          <button class="form__button-submit" type="submit" name='submit' value="store">送信</button>
+          <button class="form__button-fixes" type="submit" name='back' value="back">修正する</button>
         </div>
       </form>
     </div>

@@ -22,6 +22,11 @@ class ContactController extends Controller
 
     public function store(ContactRequest $request)
     {
+        // 修正ボタンの処理
+        if($request->input('back') == 'back'){
+            return redirect('/')->withInput();
+        }
+
         $contact = $request->only(['name', 'email', 'tel', 'content']);
         Contact::create($contact);
         return view('thanks');
