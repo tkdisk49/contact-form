@@ -66,7 +66,7 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--textarea">
-              <textarea name="content" placeholder="資料をいただきたいです"></textarea>
+              <textarea name="content" placeholder="資料をいただきたいです">{{ old('content') }}</textarea>
             </div>
           </div>
         </div>
